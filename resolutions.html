@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Разрешения</title>
+	<title>Таблица разрешений</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
@@ -24,24 +24,32 @@
 		<nav class="navbar navbar-inverse">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="http://viatec.com.ua" target="_blank">Viatec</a>
+					<a class="navbar-brand" href="http://viatec.com.ua" target="_blank">Viatec.com.ua <span class="glyphicon glyphicon-home"></span></a>
 				</div>
 				<ul class="nav navbar-nav">
 					<li><a href="index.html">FAQ</a></li>
 					<li><a href="zashita.html">Степень защиты</a></li>
 					<li class="active"><a href="resolutions.html">Таблица разрешений</a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
+					<li><a href="guides.html">Видео-гайд|Обзор</a></li>
+					<li><a href="hikvision.php">Hikvision</a></li>
+					<li><a href="dahua.php">Dahua</a></li>
+					<li><a href="other.php">Другие вопросы</a></li>
 				</ul>
 			</div>
 		</nav>
 		<!--END NAVBAR-->
 		<div class="panel panel-default">
 			<div class="panel-heading">Калькулятор размера видео</div>
-			<div class="panel-body"><a href="http://www.dr-lex.be/info-stuff/videocalc.html">http://www.beward.ru/calculators/</a>
+			<div class="panel-body"><a href="http://www.dr-lex.be/info-stuff/videocalc.html" target="_blank">http://www.beward.ru/calculators/</a>
 			</div>
-			
 		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">Калькулятор дистанции для распознавания лиц/автомобильный номеров</div>
+			<div class="panel-body"><a href="https://docs.google.com/spreadsheets/d/1lRJxKKv8abC48O7hJz8Kdd4tq9Y9AmILETpkSSVvP6s/edit#gid=0" target="_blank"> https://docs.google.com/spreadsheets/d/1lRJxKKv8abC48O7hJz8Kdd4tq9Y9AmILETpkSSVvP6s/edit#gid=0</a></div>
+		</div>
+	
+			
+		
 		<div class="panel-group">
   			<div class="panel panel-default">
     			<div class="panel-heading">
@@ -538,11 +546,26 @@
 		</div>
 		</div>
 		<!--END RESOLUTION TABLE-->
-		<h3>Разрешение в megapixel</h3>
-		<!--RESOLUTION TABLE 2-->
-		<table class="table table-bordered table-condensed"> <tbody> <tr><th>Name</th><th>Width&nbsp;(Vertical Pixels)</th><th>Height&nbsp;(Horizontal Pixels)</th><th>Total（Pixels）</th></tr> <tr> <td bgcolor="#ffffff">1MP/720P</td> <td align="right" bgcolor="#ffffff">1280</td> <td align="right" bgcolor="#ffffff">720</td> <td align="right" bgcolor="#ffffff">921,600</td> </tr> <tr> <td bgcolor="#ffffff">QVGA/960P</td> <td align="right" bgcolor="#ffffff">1280</td> <td align="right" bgcolor="#ffffff">960</td> <td align="right" bgcolor="#ffffff">1228,800</td> </tr> <tr> <td bgcolor="#ffffff">1.3MP</td> <td align="right" bgcolor="#ffffff">1280</td> <td align="right" bgcolor="#ffffff">1024</td> <td align="right" bgcolor="#ffffff">1310,720</td> </tr> <tr> <td bgcolor="#ffffff">2MP/1080P</td> <td align="right" bgcolor="#ffffff">1920</td> <td align="right" bgcolor="#ffffff">1080</td> <td align="right" bgcolor="#ffffff">2073,600</td> </tr> <tr> <td bgcolor="#ffffff">2.3MP</td> <td align="right" bgcolor="#ffffff">1920</td> <td align="right" bgcolor="#ffffff">1200</td> <td align="right" bgcolor="#ffffff">2304,000</td> </tr> <tr> <td bgcolor="#ffffff">3MP</td> <td align="right" bgcolor="#ffffff">2048</td> <td align="right" bgcolor="#ffffff">1536</td> <td align="right" bgcolor="#ffffff">3145,728</td> </tr> <tr> <td bgcolor="#ffffff">5MP</td> <td align="right" bgcolor="#ffffff">2560</td> <td align="right" bgcolor="#ffffff">1920</td> <td align="right" bgcolor="#ffffff">4915,200</td> </tr> <tr> <td bgcolor="#ffffff">6MP</td> <td align="right" bgcolor="#ffffff">3032</td> <td align="right" bgcolor="#ffffff">2008</td> <td align="right" bgcolor="#ffffff">6088,256</td> </tr> <tr> <td bgcolor="#ffffff">8MP</td> <td align="right" bgcolor="#ffffff">3264</td> <td align="right" bgcolor="#ffffff">2448</td> <td align="right" bgcolor="#ffffff">7990,272</td> </tr> </tbody> </table>
-		<!--END RESOLUTION TABLE-->
+		
+		<div class="panel-group">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title"><a data-toggle="collapse" href="#collapse3">Разрешение в megapixel</a></h4>
+				</div>
+				<div id="collapse3" class="panel-collapse collapse">
+					<div class="panel-body">
+						<table class="table table-bordered table-condensed"> <tbody> <tr><th>Name</th><th>Width&nbsp;(Vertical Pixels)</th><th>Height&nbsp;(Horizontal Pixels)</th><th>Total（Pixels）</th></tr> <tr> <td >1MP/720P</td> <td >1280</td> <td >720</td> <td >921,600</td> </tr> <tr> <td >QVGA/960P</td> <td >1280</td> <td >960</td> <td >1228,800</td> </tr> <tr> <td >1.3MP</td> <td >1280</td> <td >1024</td> <td >1310,720</td> </tr> <tr> <td >2MP/1080P</td> <td >1920</td> <td >1080</td> <td >2073,600</td> </tr> <tr> <td>2.3MP</td> <td>1920</td> <td >1200</td> <td >2304,000</td> </tr> <tr> <td >3MP</td> <td >2048</td> <td >1536</td> <td >3145,728</td> </tr> <tr> <td>5MP</td> <td >2560</td> <td >1920</td> <td >4915,200</td> </tr> <tr> <td>6MP</td> <td >3032</td> <td >2008</td> <td >6088,256</td> </tr> <tr> <td>8MP</td> <td >3264</td> <td >2448</td> <td >7990,272</td> </tr> </tbody> </table>
+						<!--END RESOLUTION TABLE-->
+					</div>	
+				</div>			
+			</div>
+		</div>
+		Standard Definition Cameras and DVRs: CIF, D1, and 960H: <br />
+		CIF DVRs: 360 x 240. (86,400 total pixels)<br />
 
+		D1 DVRs: 720 x 480. (345,600 total pixels)<br />
+
+		WD1 DVRs: 960 x 480. (460,800 total pixels)<br />
   	</div>
 
 </body>

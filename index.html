@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Putevoditel</title>
+	<title>Портал ТП Viatek</title>
 	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -24,20 +26,22 @@
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="http://viatec.com.ua" target="_blank">Viatec</a>
+				<a class="navbar-brand" href="http://viatec.com.ua" target="_blank">Viatec.com.ua <span class="glyphicon glyphicon-home"></span></a>
 			</div>
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="index.html">FAQ</a></li>
 				<li><a href="zashita.html">Степень защиты</a></li>
 				<li><a href="resolutions.html">Таблица разрешений</a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
+				<li><a href="guides.html">Видео-гайд|Обзор</a></li>
+				<li><a href="hikvision.php">Hikvision</a></li>
+				<li><a href="dahua.php">Dahua</a></li>
+				<li><a href="other.php">Другие вопросы</a></li>
 			</ul>
 		</div>
 	</nav>
 	<!--END NAVBAR-->
-	<h1 id="hik">Hikvision</h1>	
-	<!--QUESTION - ANSWER -->
+
+	<h1 id="hik">Hikvision</h1>
 		<div class="panel panel-default">
 			<div class="panel-heading">DS-2CD2020F-IW (4мм), не могу настроить Wi-Fi, не выходит зайти даже по шнуру, что делать?</div>
 			<div class="panel-body">Подключить камеру к локальной сети, и найти ее программой  SADPTool. Далее активировать, и настраивать - wi-fi  </div>
@@ -51,9 +55,9 @@
 	<!--END LIST-->	
 	<h1 id="dah">Dahua</h1>
 		<div class="panel panel-default">
-				<div class="panel-heading">Есть регистратор Dahua, забыл все пароли.</div>
-				<div class="panel-body">Если локальная учетная запись 888888 активна, сбросить из-под нее на заводские настройки. Если по каким-то причинам она была удалена сброс только в сервис центре  </div>
-			</div>
+			<div class="panel-heading">Есть регистратор Dahua, забыл все пароли.</div>
+			<div class="panel-body">Если локальная учетная запись 888888 активна, сбросить из-под нее на заводские настройки. Если по каким-то причинам она была удалена сброс только в сервис центре</div>
+		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">Камера Dahua DH-IPC-C10P как добавить к сети без интерфейса RJ-45?</div>
 			<div class="panel-body">Мануал, скачать можно на ftp://ftp.viatek.com.ua</div>	
@@ -61,7 +65,7 @@
 		<div class="panel-group">
 			<div class="panel panel-default">
 				<div class="panel-heading">DH-IPC-HFW1200S могу ли я подключить ее в облако для удаленного просмотра? Могу ли я подключить ее для вещания на веб сайт?</div>
-				<div class="panel-body">Да можете, у Dahua есть облако www.easy4ip.com </div>
+				<div class="panel-body">Да можете, у Dahua есть облако www.easy4ip.com</div>
 			</div>
 			
 			<div class="panel panel-default">
@@ -71,26 +75,26 @@
 	
 	<h1 id="prc">Прочие вопросы</h1>	
 		<div class="panel panel-default">
-				<div class="panel-heading">Не підключаються IP-камери в нормальному режимі - по IP + порт і по Onvif.
-				Безпосередньо на відеореєстратор не підключав, бо камери вже змонтовані на 2-ому поверху..
-				Між камерою і реєстратором 3 світча  Tplink TL-SG3424, Tplink TL-SG2424 ,  PoE-link 541FA (802.3 af)</div>
-				<div class="panel-body">Попробуйте изначально добиться синхронизации с ПК. Подключите ПК вместо ДВР, проверьте программой сканером есть ли связь с камерой.
-				Причины могут быть разными – завис один из свичей, камера инного производителя, камера или двр в другой подсети.</div>
+			<div class="panel-heading">Не підключаються IP-камери в нормальному режимі - по IP + порт і по Onvif.
+			Безпосередньо на відеореєстратор не підключав, бо камери вже змонтовані на 2-ому поверху..
+			Між камерою і реєстратором 3 світча  Tplink TL-SG3424, Tplink TL-SG2424 ,  PoE-link 541FA (802.3 af)</div>
+			<div class="panel-body">Попробуйте изначально добиться синхронизации с ПК. Подключите ПК вместо ДВР, проверьте программой сканером есть ли связь с камерой.
+			Причины могут быть разными – завис один из свичей, камера инного производителя, камера или двр в другой подсети.</div>
 			</div>
-			<div class="panel panel-default">
+		<div class="panel panel-default">
 			<div class="panel-heading">Турбо HD и HDCVI камеры по оптоволокну могут передаваться?</div>
-			<div class="panel-body">Камеры Турбо HD и HDCVI являются аналоговыми, и по оптоволокну передать их нереально. </div>
+			<div class="panel-body">Камеры Турбо HD и HDCVI являются аналоговыми, и по оптоволокну передать их нереально.</div>
 		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">Где можно взять прошивки для устройств?</div>
 			<div class="panel-body">Прошивки лежат на нашем ftp сервере. Адрес ftp://ftp.viatek.com.ua</div>
 		</div>
 			<!--NAVBAR LEFT-->
-			<div class="draqon"> 
-				<div class="draq"><a href="#top">Hik</a></div>
-				<div class="draq1"><a href="#dah">Dah</a></div>
-				<div class="draq2"><a href="#prc">Oth</a></div>
-			</div>
+		<div class="draqon"> 
+			<div class="draq"><a href="#top">Hik</a></div>
+			<div class="draq1"><a href="#dah">Dah</a></div>
+			<div class="draq2"><a href="#prc">Oth</a></div>
+		</div>
 </div>
 		
 
